@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+<!-- Add some CSS for styling -->
+    <style>
+        .contact-icons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            font-size: 30px;
+            margin-top: 10px;
+        }
+        
+        .contact-icons a {
+            color: whitesmoke;
+            transition: color 0.3s ease-in-out;
+        }
+        
+        .contact-icons a:hover {
+            color: #0077b5; /* LinkedIn blue */
+        }
+        
+    </style>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .profile-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+        }
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 2px solid #333;
+        }
+        .container {
+            text-align: center;
+            padding-top: 50px;
+        }
+        .section {
+            padding: 20px;
+            margin: 20px;
+            background: linear-gradient(to right, #2c3e50, #4ca1af);;
+            border-radius: 8px;
+        }
+        h2{
+            color: gold;
+        }
+        .content {
+            width: 75%;
+        }
+        strong,h3{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <img id="profile-pic" src="C:\Users\Richa\Documents\GitHub\portfolio\21MID0016.jpg" alt="Profile Picture" class="profile-pic">
+        </div>
+        <div class="container">
+            <h1>Richard L</h1>
+            <div class="contact-icons">
+                <a href="mailto:richardlawrence511@gmail.com" target="_blank">
+                    <i class="fas fa-envelope"></i>
+                </a>
+                <a href="http://www.linkedin.com/in/richard--l" target="_blank">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/richardl343" target="_blank">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://leetcode.com/u/richardlawrence511/" target="_blank">
+                    <i class="fas fa-code"></i>
+                </a>
+            </div>
+            <p>Graduate Student at Vellore Institute of Technology | VIT'26 | Data Science | Full Stack Developer</p>
+        </div>
+    </header>
+    
+    
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#experience">Work Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+        </ul>
+    </nav>
+    
+    <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>My name is Richard L. I am pursuing an integrated M. Tech CSE with a specialization in data science at the Vellore Institute of Technology. I am eager to learn something new that will help me upscale my career. I had experience in working as a full-stack developer intern at NLC India Limited, Neyveli. I also worked as a member of the organizing committee in my college events like Gravitas and Riviera.</p>
+    </section>
+    
+    <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>Python, Java, R</li>
+            <li>AWS, Azure, Cloud Computing</li>
+            <li>Data Science, Machine Learning, Artificial Intelligence</li>
+        </ul>
+    </section>
+
+    <section id="experience" class="section">
+        <h2>Work Experience</h2>
+        <div class="experience">
+            <h3>Full-Stack Developer Intern</h3>
+            <p><strong>Company:</strong> NLC India Limited, Neyveli (onsite) </p>
+            <p><strong>website:</strong> <a href = "http://nlcapps.nlcindia.in:8080/portal/qrcode/login.html" style="color: beige;"> Website </a></p>
+            <p><strong>Duration:</strong> [Jun,2024] – [July,2024]</p>
+            <p><strong>Responsibilities:</strong></p>
+            <ul>
+                <li>Developed a QR code-based OP registration system, reducing patient check-in time by 40%</li>
+                <li>Worked on backend APIs using PHP and Oracle database, improving data retrieval speed by 35% & support 1000+ daily transactions</li>
+                <li>Collaborated with the team to integrate the system with hospital management software, enhancing registration
+                    accuracy by 30%, speed, and data integrity while ensuring 99.9% system uptime.</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>
+                <h3>QR Code Based OP Registration in IHMS</h3>
+                <p><strong>Why:</strong> Enhance the efficiency of patient check-in processes</p>
+                <p><strong>How:</strong> Created a website where users scan a QR code to access and login using their ID number, allowing them to
+                    register for their desired OP departments.</p>
+                <p><strong>Significance:</strong> Improved the accuracy and speed of patient registrations.</p>
+            </li>
+            <li>
+                <h3>Bird Species Classification </h3>
+                <p><strong>Why:</strong> To enhance bird species identification accuracy for ecological research.</p>
+                <p><strong>How:</strong> Trained CNN models (DenseNet, ResNet, VGG, MobileNet), selected top-performing models, applied multi-model
+                    fusion (SVM, KNN, RF), and improved accuracy using weighted and fuzzy-based ensemble learning.</p>
+                <p><strong>Significance:</strong> Achieved high accuracy (98%) in bird species classification</p>
+            </li>
+        </ul>
+    </section>
+    <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Amazon AWS Certified Cloud Practitioner (2024 - 2027)</li>
+            <li>Cisco Data Analytics Essentials (July 2023) - Cisco Introduction to Data Science (June 2023)</li>
+            <li>pwc Power BI Job Simulation (July 2024)</li>
+            <li>Harvard Certified CS50’s Introduction to AI with Python (Feb 2025)</li>
+        </ul>
+    </section>
+    <footer>
+        <p>&copy; 2025 Richard L. All rights reserved.</p>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTopBtn" onclick="scrollToTop()">↑</button>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const sections = document.querySelectorAll(".section");
+            sections.forEach(section => {
+                section.style.opacity = 0;
+                section.style.transform = "translateY(50px)";
+            });
+
+            const revealSections = () => {
+                sections.forEach(section => {
+                    const rect = section.getBoundingClientRect();
+                    if (rect.top < window.innerHeight * 0.75) {
+                        section.style.opacity = 1;
+                        section.style.transform = "translateY(0)";
+                        section.style.transition = "all 0.6s ease-out";
+                    }
+                });
+            };
+
+            window.addEventListener("scroll", revealSections);
+            revealSections();
+        });
+    </script>
+    <div class="github-sidebar">
+        <h2>Latest GitHub Contributions</h2>
+        <ul id="github-commits" class="github-commits"></ul>
+    </div>
+    <script>
+        async function fetchGitHubCommits() {
+            const username = "richardl343"; // Change to your GitHub username
+            const response = await fetch(`https://api.github.com/users/${username}/events/public`);
+            const events = await response.json();
+            const commitList = document.getElementById("github-commits");
+            commitList.innerHTML = "";
+            let commits = events.filter(event => event.type === "PushEvent").slice(0, 5);
+            commits.forEach(event => {
+                const repoName = event.repo.name;
+                const commitMsg = event.payload.commits[0]?.message || "No message";
+                const commitUrl = `https://github.com/${repoName}/commits/main`;
+                const listItem = document.createElement("li");
+                listItem.innerHTML = `<strong>${repoName}</strong><br>${commitMsg} <br><a href="${commitUrl}" target="_blank">View Commit</a>`;
+                commitList.appendChild(listItem);
+            });
+        }
+        fetchGitHubCommits();
+    </script>
+</body>
+</html>
